@@ -275,11 +275,10 @@ SET character_set_client = @saved_cs_client;
 -- Dumping data for table `guestbook`
 --
 
-LOCK TABLES `guestbook` WRITE;
-/*!40000 ALTER TABLE `guestbook` DISABLE KEYS */;
+-- Removed initial entries in guestbook
+/*LOCK TABLES `guestbook` WRITE;
 INSERT INTO `guestbook` VALUES (1,'adam','Hi, I love your site!','2008-12-02 19:32:53');
-/*!40000 ALTER TABLE `guestbook` ENABLE KEYS */;
-UNLOCK TABLES;
+UNLOCK TABLES;*/
 
 --
 -- Table structure for table `own`
