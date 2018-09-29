@@ -16,10 +16,10 @@ $pictures = Pictures::get_all_pictures_by_tag($_GET['query']);
 
 ?>
 
-<?php our_header("", $_GET['query']); ?>
+<?php our_header("", htmlentities($_GET['query'])); ?>
 
 <div class="column prepend-1 span-24 first last">
-<h2>Pictures that are tagged as '<?= $_GET['query']  ?>'</h2>
+<h2>Pictures that are tagged as '<?= htmlentities($_GET['query'])  ?>'</h2>
 
    <?php thumbnail_pic_list($pictures); ?>
 
